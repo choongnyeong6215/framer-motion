@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
@@ -9,7 +10,7 @@ export const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
-export const Box = styled.div`
+export const Box = styled(motion.div)`
   width: 200px;
   height: 200px;
   background-color: white;
