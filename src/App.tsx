@@ -1,15 +1,43 @@
-import { Box, Wrapper } from "./styles/main";
+import { Box, Circle, Wrapper } from "./styles/main";
+import { Variants } from "framer-motion";
 
 const App = () => {
+  const boxVariants = {
+    start: {
+      scale: 0,
+    },
+    end: {
+      scale: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.5,
+        delayChildren: 1,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const circleVariants = {
+    start: {
+      opacity: 0,
+      y: 50,
+    },
+    end: {
+      opacity: 1,
+      y: 0,
+    },
+  };
+
   return (
     <>
       <h1 style={{ color: "white", textAlign: "center" }}>Frmaer Motion</h1>
       <Wrapper>
-        <Box
-          initial={{ scale: 0 }}
-          animate={{ scale: 1, rotate: 360 }}
-          transition={{ type: "spring", delay: 0.5 }}
-        />
+        <Box variants={boxVariants} initial="start" animate="end">
+          <Circle variants={circleVariants} />
+          <Circle variants={circleVariants} />
+          <Circle variants={circleVariants} />
+          <Circle variants={circleVariants} />
+        </Box>
       </Wrapper>
     </>
   );
