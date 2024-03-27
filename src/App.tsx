@@ -1,43 +1,37 @@
-import { Box, Circle, Wrapper } from "./styles/main";
+import { useRef } from "react";
+import { BiggerBox, Box, Circle, Wrapper } from "./styles/main";
 import { Variants } from "framer-motion";
 
 const App = () => {
   const boxVariants = {
-    start: {
-      scale: 0,
+    hover: {
+      scale: 1.5,
+      rotate: 90,
     },
-    end: {
+    click: {
       scale: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.5,
-        delayChildren: 1,
-        staggerChildren: 0.1,
-      },
+      borderRadius: "50%",
     },
   };
 
-  const circleVariants = {
-    start: {
-      opacity: 0,
-      y: 50,
-    },
-    end: {
-      opacity: 1,
-      y: 0,
-    },
-  };
+  const biggerBoxRef = useRef<HTMLDivElement>(null);
 
   return (
     <>
       <h1 style={{ color: "white", textAlign: "center" }}>Frmaer Motion</h1>
       <Wrapper>
-        <Box variants={boxVariants} initial="start" animate="end">
-          <Circle variants={circleVariants} />
-          <Circle variants={circleVariants} />
-          <Circle variants={circleVariants} />
-          <Circle variants={circleVariants} />
-        </Box>
+        {/* hover */}
+        {/* <Box variants={boxVariants} whileHover="hover" whileTap="click" /> */}
+
+        {/* Drag */}
+        <BiggerBox ref={biggerBoxRef}>
+          <Box
+            drag
+            dragConstraints={biggerBoxRef}
+            dragSnapToOrigin={true}
+            dragElastic={0.5}
+          />
+        </BiggerBox>
       </Wrapper>
     </>
   );
