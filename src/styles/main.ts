@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 200vh;
   width: 100vw;
-  margin: 0 auto;
+  /* background: linear-gradient(135deg, rgb(0, 210, 238), rgb(0, 83, 238)); */
 `;
 
 export const BiggerBox = styled.div`
