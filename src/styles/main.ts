@@ -11,8 +11,8 @@ export const Wrapper = styled.div`
 `;
 
 export const BiggerBox = styled.div`
-  width: 500px;
-  height: 500px;
+  width: 600px;
+  height: 600px;
   border-radius: 2rem;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
   background-color: rgba(255, 255, 255, 0.4);
@@ -22,9 +22,9 @@ export const BiggerBox = styled.div`
 `;
 
 export const Box = styled(motion.div)`
-  width: 100px;
-  height: 100px;
-  background-color: white;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.4);
   border-radius: 2rem;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
   display: grid;
