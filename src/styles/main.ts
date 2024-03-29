@@ -3,8 +3,10 @@ import styled from "styled-components";
 
 export const Wrapper = styled(motion.div)`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   height: 100vh;
   width: 100vw;
   background: linear-gradient(135deg, rgb(0, 210, 238), rgb(0, 83, 238));
