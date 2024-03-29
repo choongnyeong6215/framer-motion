@@ -5,9 +5,9 @@ export const Wrapper = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 200vh;
+  height: 100vh;
   width: 100vw;
-  /* background: linear-gradient(135deg, rgb(0, 210, 238), rgb(0, 83, 238)); */
+  background: linear-gradient(135deg, rgb(0, 210, 238), rgb(0, 83, 238));
 `;
 
 export const BiggerBox = styled.div`
@@ -38,4 +38,13 @@ export const Circle = styled(motion.div)`
   border-radius: 35px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
   place-self: center;
+`;
+
+export const Svg = styled.svg`
+  width: 300px;
+  height: 300px;
+  path {
+    stroke: white;
+    stroke-width: 3;
+  }
 `;
