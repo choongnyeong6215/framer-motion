@@ -2,17 +2,6 @@ import { Svg, Wrapper } from "../styles/main";
 import { motion } from "framer-motion";
 
 const SvgAnim = () => {
-  // const svg = {
-  //   start: {
-  //     pathLength: 0,
-  //     fill: "rgba(255,255,255,0)",
-  //   },
-  //   end: {
-  //     pathLength: 1,
-  //     fill: "rgba(255,255,255,1)",
-  //   },
-  // }
-
   const svgVariants = {
     start: {
       pathLength: 0,
