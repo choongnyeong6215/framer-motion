@@ -4,11 +4,12 @@ import MotionValues from "./motions/MotionValues";
 import SvgAnim from "./motions/SvgAnim";
 import Variants from "./motions/Variants";
 import AnimPres from "./motions/AnimPres";
+import Slider from "./motions/Slider";
 
 const App = () => {
   return (
     <>
-      <AnimPres />
+      <Slider />
     </>
   );
 };

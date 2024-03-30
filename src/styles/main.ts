@@ -31,6 +31,12 @@ export const Box = styled(motion.div)`
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  position: absolute;
+  top: 25rem;
 `;
 
 export const Circle = styled(motion.div)`
