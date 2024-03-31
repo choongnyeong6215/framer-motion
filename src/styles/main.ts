@@ -22,8 +22,27 @@ export const BiggerBox = styled.div`
   align-items: center;
 `;
 
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 50vw;
+  div:first-child,
+  div:last-child {
+    grid-column: span 2;
+  }
+  gap: 1rem;
+`;
+
+export const Overlay = styled(motion.div)`
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const Box = styled(motion.div)`
-  width: 200px;
   height: 200px;
   background-color: white;
   border-radius: 2rem;

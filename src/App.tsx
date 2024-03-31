@@ -6,11 +6,12 @@ import Variants from "./motions/Variants";
 import AnimPres from "./motions/AnimPres";
 import Slider from "./motions/Slider";
 import Layout from "./motions/Layout";
+import Final from "./motions/Final";
 
 const App = () => {
   return (
     <>
-      <Layout />
+      <Final />
     </>
   );
 };
