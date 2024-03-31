@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled(motion.div)`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -34,18 +33,14 @@ export const Box = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
-  position: absolute;
-  top: 25rem;
 `;
 
 export const Circle = styled(motion.div)`
-  background-color: white;
-  height: 70px;
-  width: 70px;
-  border-radius: 35px;
+  background-color: tomato;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.06);
-  place-self: center;
 `;
 
 export const Svg = styled.svg`
